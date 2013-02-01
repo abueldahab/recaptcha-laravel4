@@ -5,7 +5,7 @@
     "keywords": ["recaptcha", "laravel"],
     "require": {
         "php": ">=5.3.7",
-		"illuminate/validation": "4.0.x"
+		"illuminate/validation": "*"
     },
     "autoload": {
         "files": ["start.php"],

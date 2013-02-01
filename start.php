@@ -4,7 +4,7 @@
 	'Recaptcha\\Recaptcha' =>  __DIR__ . DS . 'recaptcha' . EXT
 ));*/
 
-Illuminate\Validation\Validator::register('recaptcha', function($attribute, $value, $parameters)
+Illuminate\Validation\Validator::addExtension('recaptcha', function($attribute, $value, $parameters)
 {
 	$recaptcha = Recaptcha\Recaptcha::recaptcha_check_answer($parameters[0], Laravel\Request::ip(), Laravel\Input::get('recaptcha_challenge_field'), $value);
 
