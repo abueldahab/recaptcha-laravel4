@@ -4,7 +4,8 @@
     "description": "Laravel reCAPTCHA bundle by Jason Lewis, edited for Laravel 4",
     "keywords": ["recaptcha", "laravel"],
     "require": {
-        "php": ">=5.3.7"
+        "php": ">=5.3.7",
+		"laravel/framework": "*"
     },
     "autoload": {
         "files": ["start.php"],
