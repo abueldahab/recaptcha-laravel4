@@ -1,0 +1,12 @@
+{
+    "name": "meowcakes/recaptcha-laravel4",
+    "type": "library",
+    "description": "Laravel reCAPTCHA bundle by Jason Lewis, edited for Laravel 4",
+    "keywords": ["recaptcha", "laravel"],
+    "require": {
+        "php": ">=5.3.7"
+    },
+    "autoload": {
+        "files": ["start.php"]
+    }
+}
