@@ -1,14 +1,23 @@
 {
     "name": "meowcakes/recaptcha-laravel4",
-    "type": "library",
-    "description": "Laravel reCAPTCHA bundle by Jason Lewis, edited for Laravel 4",
-    "keywords": ["recaptcha", "laravel"],
+    "description": "",
+    "authors": [
+        {
+            "name": "roger",
+            "email": "rogan.o.morrow@gmail.com"
+        }
+    ],
     "require": {
-        "php": ">=5.3.7",
-		"illuminate/validation": "*"
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
     },
     "autoload": {
-        "files": ["start.php"],
-		"psr-0": { "Laravel\\Recaptcha\\": "" }
-    }
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Meowcakes\\RecaptchaLaravel4": "src/"
+        }
+    },
+    "minimum-stability": "dev"
 }
